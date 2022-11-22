@@ -1,6 +1,6 @@
 # wings-cloud-web
 
-✨ 基于 Nuxtjs + Varlet 的服务端渲染 Web 通用解决方案，基于 Material Design 的 UI 风格，响应式适配多端
+✨ 基于 Nuxtjs + Varlet 的服务端渲染多页 Web 解决方案，基于 Material Design 的 UI 风格，响应式适配多端
 
 📌 源码: [wingscloud/wings-cloud-web](https://github.com/wingscloud/wings-cloud-web)
 
