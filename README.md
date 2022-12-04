@@ -1,6 +1,6 @@
 # wings-cloud-web
 
-✨ 基于 Nuxtjs 的服务端渲染多页 Web 站点解决方案，Material Design ，支持 SEO、国际化、响应式界面
+✨ 基于 Nuxtjs 的服务端渲染多页 Web 站点解决方案，Material Design 风格响应式界面，支持国际化
 
 📌 源码: [wingscloud/wings-cloud-web](https://github.com/wingscloud/wings-cloud-web)
 
