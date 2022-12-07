@@ -1,16 +1,46 @@
 {
-  "private": true,
+  "name": "wings-cloud-web",
+  "version": "0.0.2",
+  "description": "基于 Nuxtjs 的服务端渲染多页 Web 站点解决方案，Material Design 风格响应式界面，支持国际化",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wingscloud/wings-cloud-web.git"
+  },
+  "author": "Kaivan Wong",
+  "license": "MIT",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint-staged": "lint-staged"
+  },
+  "private": true,
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": [
+      "eslint --fix --ext"
+    ],
+    "*.vue": [
+      "eslint  --fix --ext"
+    ]
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "@antfu/eslint-config": "^0.33.1",
+    "@unocss/nuxt": "^0.47.5",
+    "unocss": "^0.47.5",
+    "eslint": "^8.29.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "nuxt": "3.0.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.3"
   },
   "dependencies": {
-    "@varlet/ui": "^2.2.1"
+    "@varlet/ui": "^2.2.1",
+    "@pinia/nuxt": "^0.4.6",
+    "@vueuse/core": "^9.6.0",
+    "@vueuse/nuxt": "^9.6.0",
+    "pinia": "^2.0.27"
   }
 }
