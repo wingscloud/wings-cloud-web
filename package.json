@@ -1,46 +1,86 @@
 {
-  "name": "wings-cloud-web",
-  "version": "0.0.2",
-  "description": "基于 Nuxtjs 的服务端渲染多页 Web 站点解决方案，Material Design 风格响应式界面，支持国际化",
+  "name": "portal-website",
+  "version": "0.1.0",
+  "description": "门户网站系统，基于 Nuxt3 的服务端多页渲染",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wingscloud/wings-cloud-web.git"
+    "url": "https://github.com/wingscloud/portal-website.git"
   },
   "author": "Kaivan Wong",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
+    "serve": "npm run serve:dev",
+    "serve:dev": "nuxt dev --mode development",
+    "serve:stag": "nuxt dev  --mode staging",
+    "serve:prod": "nuxt dev  --mode production",
+    "build": "npm run build:prod",
+    "build:dev": "nuxt build  --mode development",
+    "build:stag": "nuxt build  --mode staging",
+    "build:prod": "nuxt build  --mode production",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "format:prettier": "prettier --write ./src/**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}",
+    "lint:stylelint": "stylelint --fix \"./src/**/*.{vue,less,postcss,css,scss}\"",
+    "lint:eslint": "npx eslint ./src --ext .vue,.ts,.tsx,.js,.jsx",
+    "lint:eslint:fix": "npx eslint ./src --ext .vue,.ts,.tsx,.js,.jsx --fix",
+    "lint:lint-staged": "lint-staged"
   },
-  "private": true,
   "lint-staged": {
-    "*.{js,ts,tsx,jsx}": [
-      "eslint --fix --ext"
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint"
     ],
     "*.vue": [
-      "eslint  --fix --ext"
+      "eslint",
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "package.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
     ]
   },
-  "devDependencies": {
-    "@antfu/eslint-config": "^0.33.1",
-    "@unocss/nuxt": "^0.47.5",
-    "unocss": "^0.47.5",
-    "eslint": "^8.29.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
-    "nuxt": "3.0.0",
-    "sass": "^1.56.1",
-    "typescript": "^4.9.3"
-  },
   "dependencies": {
-    "@varlet/ui": "^2.2.1",
     "@pinia/nuxt": "^0.4.6",
+    "@unocss/nuxt": "^0.47.5",
     "@vueuse/core": "^9.6.0",
     "@vueuse/nuxt": "^9.6.0",
-    "pinia": "^2.0.27"
+    "animate.css": "^4.1.1",
+    "axios": "^1.2.1",
+    "mitt": "^3.0.0",
+    "nuxt": "3.0.0",
+    "pinia": "^2.0.27",
+    "svga": "^2.0.7",
+    "unocss": "^0.47.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "@varlet/ui": "^2.3.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "husky": "^8.0.2",
+    "husky-init": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.19",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.1",
+    "sass": "^1.56.2",
+    "stylelint": "^14.16.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "typescript": "^4.9.4",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-vconsole": "^1.3.1",
+    "vue-eslint-parser": "^9.1.0"
   }
 }

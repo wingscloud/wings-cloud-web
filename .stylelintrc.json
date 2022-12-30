@@ -1,0 +1,16 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-recommended-vue", "stylelint-config-prettier", "stylelint-config-rational-order"],
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.tsx", "**/*.ts", "**/*.svg", "**/*.png", "**/*.jpg"],
+  "rules": {
+    "indentation": 2,
+    "scss/dollar-variable-pattern": ["^foo", { "ignore": "global" }],
+    "selector-class-pattern": "",
+    "color-function-notation": "modern"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
+}
