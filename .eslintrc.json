@@ -1,0 +1,45 @@
+{
+  "root": true,
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "./.eslintrc-auto-import"
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "vue/attributes-order": "off",
+    "vue/one-component-per-file": "off",
+    "vue/html-closing-bracket-newline": "off",
+    "vue/max-attributes-per-line": "off",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-useless-escape": "off",
+    "no-debugger": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "no-async-promise-executor": "off",
+    "vue/component-definition-name-casing": [
+      "error",
+      "kebab-case"
+    ],
+    "vue/no-deprecated-v-is": "off"
+  },
+  "globals": {
+    "defineOptions": "readonly",
+    "useRuntimeConfig": "readonly"
+  }
+}

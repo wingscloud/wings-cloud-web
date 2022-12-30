@@ -1,0 +1,4 @@
+interface VITE_ENV_CONFIG {
+  VITE_REQUEST_URL: string;
+  VITE_REQUEST_URL_PREFIX: string;
+}
