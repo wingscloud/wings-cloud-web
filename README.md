@@ -1,10 +1,10 @@
 <p>
-	<img width="100%" src="https://raw.githubusercontent.com/wingscloud/static/d12961e3a1c2f49cc3c685e0f0553eb499893b70/logos/banner.svg" />
+	<img width="100%" src="https://github.com/wingscloud/static/blob/main/logos/banner.png?raw=true" />
 </p>
 
 # 👋 欢迎使用 @wingscloud/template-website 前端模板
 
-【前端模板】门户网站，基于 Nuxt + Varlet UI 开发。拒绝过度封装，减少学习成本，快速落地开发。提供国际化支持、移动端适配、服务端渲染、SEO 优化、3D 交互等。
+【前端模板】门户网站，基于 Nuxt + Varlet UI 开发。面向门户建站，基于成熟的 UI 设计。提供国际化支持、移动端适配、服务端渲染、SEO 优化、3D 交互等。
 
 <p>
 	<img src="https://img.shields.io/github/v/release/wingscloud/template-website.svg?color=3DABF5&label=Release"/>
