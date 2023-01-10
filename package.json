@@ -1,30 +1,16 @@
 {
-  "name": "portal-website",
+  "name": "@wingscloud/template-website",
   "version": "0.1.0",
-  "description": "门户网站系统，基于 Nuxt3 的服务端多页渲染",
+  "description": "【前端模板】门户网站，基于 Nuxt + Varlet UI 开发。拒绝过度封装，减少学习成本，快速落地开发。提供国际化支持、移动端适配、服务端渲染、SEO 优化、3D 交互等。",
+  "author": "Kaivan Wong <kaivanwong@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/wingscloud/template-website#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wingscloud/portal-website.git"
+    "url": "git+https://github.com/wingscloud/template-website.git"
   },
-  "author": "Kaivan Wong",
-  "license": "MIT",
-  "scripts": {
-    "serve": "npm run serve:dev",
-    "serve:dev": "nuxt dev --mode development",
-    "serve:stag": "nuxt dev  --mode staging",
-    "serve:prod": "nuxt dev  --mode production",
-    "build": "npm run build:prod",
-    "build:dev": "nuxt build  --mode development",
-    "build:stag": "nuxt build  --mode staging",
-    "build:prod": "nuxt build  --mode production",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint-staged": "lint-staged",
-    "format:prettier": "prettier --write ./src/**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}",
-    "lint:stylelint": "stylelint --fix \"./src/**/*.{vue,less,postcss,css,scss}\"",
-    "lint:eslint": "npx eslint ./src --ext .vue,.ts,.tsx,.js,.jsx",
-    "lint:eslint:fix": "npx eslint ./src --ext .vue,.ts,.tsx,.js,.jsx --fix",
-    "lint:lint-staged": "lint-staged"
+  "bugs": {
+    "url": "https://github.com/wingscloud/template-website/issues"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -42,6 +28,24 @@
     "*.md": [
       "prettier --write"
     ]
+  },
+  "scripts": {
+    "serve": "npm run serve:dev",
+    "serve:dev": "nuxt dev --mode development",
+    "serve:stag": "nuxt dev  --mode staging",
+    "serve:prod": "nuxt dev  --mode production",
+    "build": "npm run build:prod",
+    "build:dev": "nuxt build  --mode development",
+    "build:stag": "nuxt build  --mode staging",
+    "build:prod": "nuxt build  --mode production",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint-staged": "lint-staged",
+    "format:prettier": "prettier --write ./src/**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}",
+    "lint:stylelint": "stylelint --fix \"./src/**/*.{vue,less,postcss,css,scss}\"",
+    "lint:eslint": "npx eslint ./src --ext .vue,.ts,.tsx,.js,.jsx",
+    "lint:eslint:fix": "npx eslint ./src --ext .vue,.ts,.tsx,.js,.jsx --fix",
+    "lint:lint-staged": "lint-staged"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
